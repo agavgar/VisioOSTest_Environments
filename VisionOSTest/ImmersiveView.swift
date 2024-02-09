@@ -42,21 +42,7 @@ struct ImmersiveView: View {
         })
     }
     
-    private func createDynamicSkybox() -> Entity? {
-        // Mesh
-        let skyboxMesh = MeshResource.generateSphere(radius: 1000)
-        
-        //Video Material
-        guard let videoMaterial = createVideoMaterial() else { return nil }
-        
-        //Entity
-        let skyBoxEntity = ModelEntity(mesh: skyboxMesh, materials: [videoMaterial])
-        skyBoxEntity.scale = .init(x: -1, y: 1, z: 1)
-        
-        
-        return skyBoxEntity
-    }
-    
+    //MARK: - Static changes
     private func createStaticSkybox() -> Entity? {
         let skyboxMesh = MeshResource.generateSphere(radius: 1000)
         
@@ -88,6 +74,22 @@ struct ImmersiveView: View {
             ModelComponent(mesh: MeshResource.generateSphere(radius: 1000), materials: [updatedBoxMaterial]))
         
     }
+    //MARK: - Dinamic 360Video
+    private func createDynamicSkybox() -> Entity? {
+        // Mesh
+        let skyboxMesh = MeshResource.generateSphere(radius: 1000)
+        
+        //Video Material
+        guard let videoMaterial = createVideoMaterial() else { return nil }
+        
+        //Entity
+        let skyBoxEntity = ModelEntity(mesh: skyboxMesh, materials: [videoMaterial])
+        skyBoxEntity.scale = .init(x: -1, y: 1, z: 1)
+        
+        
+        return skyBoxEntity
+    }
+
     
     private func createVideoMaterial() -> VideoMaterial? {
         // Video url
