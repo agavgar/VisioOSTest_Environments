@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Psychedelic_Illustration_equirectangular-jpg_An_alien_old_civilization_1156136854_10131058.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		6ED5BFD62B762D5A006E6CE7 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 6ED5BFD52B762D5A006E6CE7 /* RealityKitContent */; };
 		6ED5BFD82B762D5A006E6CE7 /* VisionOSTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED5BFD72B762D5A006E6CE7 /* VisionOSTestApp.swift */; };
-		6ED5BFDA2B762D5A006E6CE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED5BFD92B762D5A006E6CE7 /* ContentView.swift */; };
 		6ED5BFDC2B762D5B006E6CE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ED5BFDB2B762D5B006E6CE7 /* Assets.xcassets */; };
 		6ED5BFDF2B762D5B006E6CE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ED5BFDE2B762D5B006E6CE7 /* Preview Assets.xcassets */; };
+		6ED5BFE72B762DFC006E6CE7 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED5BFE62B762DFC006E6CE7 /* ImmersiveView.swift */; };
+		6ED5BFE92B7632D1006E6CE7 /* beach.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6ED5BFE82B7632D1006E6CE7 /* beach.mp4 */; };
+		6ED5BFEB2B764401006E6CE7 /* SkyBoxControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED5BFEA2B764401006E6CE7 /* SkyBoxControls.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6ED5BFD02B762D5A006E6CE7 /* VisionOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED5BFD42B762D5A006E6CE7 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		6ED5BFD72B762D5A006E6CE7 /* VisionOSTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOSTestApp.swift; sourceTree = "<group>"; };
-		6ED5BFD92B762D5A006E6CE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6ED5BFDB2B762D5B006E6CE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6ED5BFDE2B762D5B006E6CE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6ED5BFE02B762D5B006E6CE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ED5BFE62B762DFC006E6CE7 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		6ED5BFE82B7632D1006E6CE7 /* beach.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = beach.mp4; sourceTree = "<group>"; };
+		6ED5BFEA2B764401006E6CE7 /* SkyBoxControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyBoxControls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 		6ED5BFC72B762D59006E6CE7 = {
 			isa = PBXGroup;
 			children = (
+				6ED5BFE82B7632D1006E6CE7 /* beach.mp4 */,
 				6ED5BFD22B762D5A006E6CE7 /* VisionOSTest */,
 				6ED5BFD32B762D5A006E6CE7 /* Packages */,
 				6ED5BFD12B762D5A006E6CE7 /* Products */,
@@ -57,10 +62,11 @@
 			isa = PBXGroup;
 			children = (
 				6ED5BFD72B762D5A006E6CE7 /* VisionOSTestApp.swift */,
-				6ED5BFD92B762D5A006E6CE7 /* ContentView.swift */,
 				6ED5BFDB2B762D5B006E6CE7 /* Assets.xcassets */,
 				6ED5BFE02B762D5B006E6CE7 /* Info.plist */,
 				6ED5BFDD2B762D5B006E6CE7 /* Preview Content */,
+				6ED5BFE62B762DFC006E6CE7 /* ImmersiveView.swift */,
+				6ED5BFEA2B764401006E6CE7 /* SkyBoxControls.swift */,
 			);
 			path = VisionOSTest;
 			sourceTree = "<group>";
@@ -142,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED5BFE92B7632D1006E6CE7 /* beach.mp4 in Resources */,
 				6ED5BFDF2B762D5B006E6CE7 /* Preview Assets.xcassets in Resources */,
 				6ED5BFDC2B762D5B006E6CE7 /* Assets.xcassets in Resources */,
 			);
@@ -154,7 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6ED5BFDA2B762D5A006E6CE7 /* ContentView.swift in Sources */,
+				6ED5BFE72B762DFC006E6CE7 /* ImmersiveView.swift in Sources */,
+				6ED5BFEB2B764401006E6CE7 /* SkyBoxControls.swift in Sources */,
 				6ED5BFD82B762D5A006E6CE7 /* VisionOSTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
